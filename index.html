@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园电脑急救站 - 专业维修/软件安装服务</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #6e48aa;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .price-table th {
+            background-color: #f2f2f2;
+        }
+        .price-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .contact-method {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .contact-method h3 {
+            color: #6e48aa;
+            margin-bottom: 15px;
+        }
+        .contact-method p {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #6e48aa;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #9d50bb;
+        }
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .contact-method {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>校园电脑急救站</h1>
+            <p class="tagline">专业电脑维修 | 软件安装 | 系统优化 | 快速响应</p>
+        </header>
+
+        <div class="service-card">
+            <h2>我们的服务</h2>
+            <p>专为学生和教职工提供便捷、可靠的电脑技术支持服务，解决各种软硬件问题，让您的学习和工作不受干扰。</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li>电脑运行缓慢？我们来优化！</li>
+                <li>系统崩溃？专业重装系统+数据备份</li>
+                <li>专业软件安装配置（MATLAB/Adobe/Office等）</li>
+                <li>笔记本清灰散热，延长设备寿命</li>
+                <li>病毒查杀，保护您的隐私安全</li>
+            </ul>
+            <p><span class="highlight">学生凭学生证可享9折优惠！</span></p>
+        </div>
+
+        <div class="service-card">
+            <h2>服务价格</h2>
+            <table class="price-table">
+                <tr>
+                    <th>服务项目</th>
+                    <th>说明</th>
+                    <th>价格</th>
+                </tr>
+                <tr>
+                    <td>系统重装</td>
+                    <td>Windows/macOS系统安装+基础驱动</td>
+                    <td>50元</td>
+                </tr>
+                <tr>
+                    <td>软件安装</td>
+                    <td>单款软件安装配置（Office/PS等）</td>
+                    <td>20元/款</td>
+                </tr>
+                <tr>
+                    <td>笔记本清灰</td>
+                    <td>拆机清洁+更换硅脂（需自备硅脂）</td>
+                    <td>60元</td>
+                </tr>
+                <tr>
+                    <td>系统优化</td>
+                    <td>开机加速+垃圾清理+基础设置优化</td>
+                    <td>30元</td>
+                </tr>
+                <tr>
+                    <td>病毒查杀</td>
+                    <td>全盘扫描+恶意软件清除</td>
+                    <td>40元</td>
+                </tr>
+                <tr>
+                    <td>数据恢复</td>
+                    <td>误删文件恢复（视难度定价）</td>
+                    <td>80元起</td>
+                </tr>
+            </table>
+            <p style="margin-top: 15px; font-style: italic;">* 复杂问题需现场检测后报价，硬件更换另计材料费</p>
+        </div>
+
+        <div class="service-card">
+            <h2>预约服务</h2>
+            <form id="serviceForm">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">联系方式（微信/电话）</label>
+                    <input type="text" id="contact" name="contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="problem">遇到的问题</label>
+                    <textarea id="problem" name="problem" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="service">需要什么服务？</label>
+                    <select id="service" name="service">
+                        <option value="system">系统重装</option>
+                        <option value="software">软件安装</option>
+                        <option value="clean">笔记本清灰</option>
+                        <option value="optimize">系统优化</option>
+                        <option value="virus">病毒查杀</option>
+                        <option value="other">其他问题</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">提交预约</button>
+            </form>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-method">
+                <h3>联系我们</h3>
+                <p><strong>微信：</strong> CampusPCRepair</p>
+                <p><strong>QQ：</strong> 123456789</p>
+                <p><strong>电话：</strong> 138-XXXX-XXXX</p>
+                <p>服务时间：周一至周日 10:00-21:00</p>
+                <a href="#serviceForm" class="btn">立即预约</a>
+            </div>
+            <div class="contact-method">
+                <h3>服务承诺</h3>
+                <p>✅ 30分钟快速响应</p>
+                <p>✅ 透明收费，无隐藏费用</p>
+                <p>✅ 操作前确认，数据安全有保障</p>
+                <p>✅ 提供3天免费售后服务</p>
+                <p>❌ 不承接违法软件安装</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2023 校园电脑急救站 | 由计算机学院学生团队提供 | 最后更新: 2023年10月</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('预约已提交！我们会在1小时内联系您确认详情。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
